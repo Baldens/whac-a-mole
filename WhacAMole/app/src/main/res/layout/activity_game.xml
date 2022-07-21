@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/game_logo"
+        tools:layout_editor_absoluteX="-5dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Chronometer
+        android:id="@+id/chronometerTimer_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="16dp"
+        android:layout_weight="1"
+        android:background="@drawable/style_border_timer"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCountCatch_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/style_border_timer"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:text="0"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/textCountCatch_game"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/firstPeatLine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/textCountCatch_game"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp">
+
+            <ImageButton
+                android:id="@+id/button_firstMole_FirstLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:maxWidth="42dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_secondMole_FirstLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_thirdMole_FirstLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstPeatLine2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/firstPeatLine"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp">
+
+            <ImageButton
+                android:id="@+id/button_firstMole_SecondLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:maxWidth="42dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_secondMole_SecondLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_thirdMole_SecondLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/firstPeatLine3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@+id/firstPeatLine2"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="-3dp">
+
+            <ImageButton
+                android:id="@+id/button_firstMole_ThirdLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:maxWidth="42dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_secondMole_ThirdLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+            <ImageButton
+                android:id="@+id/button_thirdMole_ThirdLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:scaleType="fitCenter"
+                android:src="@drawable/peat_" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.gusakov.library.PulseCountDown
+        android:id = "@+id/pulseCountDown"
+        android:layout_width = "wrap_content"
+        android:layout_height = "wrap_content"
+        android:text = "3"
+        android:textSize = "100sp"
+        app:pc_startValue = "3"
+        app:layout_constraintBottom_toBottomOf = "parent"
+        app:layout_constraintLeft_toLeftOf = "parent"
+        app:layout_constraintRight_toRightOf = "parent"
+        app:layout_constraintTop_toTopOf = "parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
